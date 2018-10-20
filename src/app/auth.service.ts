@@ -24,7 +24,7 @@ export class AuthService {
     }
 
     goodBy(){
-        this.test.next('GoodBy');
+        this.test.next('GoodBy My Friend');
     }
 
 
