@@ -1,0 +1,17 @@
+<span>Mon post est : </span>
+<div *ngIf="post">
+
+  <h2>{{post.author | uppercase}} Details</h2>
+  <div><span>id: </span>{{post.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="post.title" placeholder="title"/>
+    </label>
+  </div>
+
+</div>
+
+<div *ngIf="lol">
+    Envoyé depuis un #lol
+  {{lol}}
+</div>

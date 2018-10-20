@@ -1,27 +1,85 @@
 {
-  "user" : {
-    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIiwidXNlciI6ImFsZXgiLCJleHAiOjE1NzEzOTYwNDM3NTEsIm5hbWUiOiJhbGV4IiwiaWF0IjoxNTcxMzk2MDQzNzUxLCJyb2xlIjoidXNlciJ9.mwoU765OvTHJBbD0vOEsRMoBUYur2vPJkzzQleMcTCg",
-    "username" : "alex74",
-    "password" : 123,
-    "email" : "ok@ok.fr"
+  "user": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIiwidXNlciI6ImFsZXgiLCJleHAiOjE1NzEzOTYwNDM3NTEsIm5hbWUiOiJhbGV4IiwiaWF0IjoxNTcxMzk2MDQzNzUxLCJyb2xlIjoidXNlciJ9.mwoU765OvTHJBbD0vOEsRMoBUYur2vPJkzzQleMcTCg",
+    "username": "alex74",
+    "password": 123,
+    "email": "ok@ok.fr"
   },
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" },
-    { "id": 4, "title": "json-server", "author": "typicode" },
-    { "id": 51, "title": "json-server", "author": "typicode" },
-    { "id": 11, "title": "json-server", "author": "typicode" },
-    { "id": 88, "title": "json-server", "author": "typicode" },
-    { "id": 71, "title": "json-server", "author": "typicode" },
-    { "id": 881, "title": "json-server", "author": "typicode" },
-    { "id": 19, "title": "json-server", "author": "typicode" }
-
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 4,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 51,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 11,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 88,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 71,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 881,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 19,
+      "title": "json-server",
+      "author": "typicode"
+    }
   ],
   "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 4 },
-    { "id": 3, "body": "some comment", "postId": 4 },
-    { "id": 4, "body": "some comment", "postId": 881 },
-    { "id": 5, "body": "some comment", "postId": 19 }
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some comment",
+      "postId": 4
+    },
+    {
+      "id": 3,
+      "body": "some comment",
+      "postId": 4
+    },
+    {
+      "id": 4,
+      "body": "some comment",
+      "postId": 881
+    },
+    {
+      "id": 5,
+      "body": "some comment",
+      "postId": 19
+    }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  },
+  "test": {
+    "test": {
+      "name": "GoodBy My Friendppp"
+    }
+  }
 }

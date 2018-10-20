@@ -15,8 +15,16 @@
         </mat-card-content>
         <mat-card-actions>
             <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
+            <button [class.selected]="post === selectedPost" (click)="onSelect(post)" mat-button>SEE</button>
         </mat-card-actions>
+
+        <app-post-detail [post]="selectedPost"></app-post-detail>
+        <app-post-detail [post]="post"></app-post-detail>
+
     </mat-card>
 
+    <input #lol type="text"/>
+    <button (click)="getlol(lol.value)">generate lol</button>
+    <span *ngIf="lol2">{{lol2}}</span>
+    <app-post-detail [lol]="lol.value"></app-post-detail>
 </p>

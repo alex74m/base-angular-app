@@ -1,10 +1,17 @@
 <p>
     public works!
   <span *ngIf="test">
-    {{test}}
+    {{test.name}}
   </span>
 
   <button (click)="goodBy()">Say good by</button>
 
 
 </p>
+
+<div>
+  <label>name:
+    <input  [(ngModel)]="test.name" placeholder="test"/>
+  </label>
+  <button (click)="updateTest(test)">Modifier good by</button>
+</div>

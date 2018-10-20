@@ -38,13 +38,16 @@ export class PostComponent implements OnInit {
     public comments : Comment[] = [];
     animal: string;
     name: string;
+    selectedPost : Post;
 
+    lol2 : string;
 
     constructor(private postService: PostService, public dialog: MatDialog) {
     }
 
     ngOnInit() {
-/*
+
+        /*
         this.postService.getPosts().pipe(
             map((posts: Post[]) => posts.filter(post => post.id == 1))
         ).subscribe((posts) => {
@@ -75,6 +78,16 @@ export class PostComponent implements OnInit {
         });
 
     }
+
+
+    getlol(val){
+        console.log(val);
+        this.lol2 = val;
+    }
+
+    onSelect(post: Post): void {
+        this.selectedPost = post;
+      }
 
     openDialog(): void {
         const dialogRef = this.dialog.open(DialogContentExampleDialog, {

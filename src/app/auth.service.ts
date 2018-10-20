@@ -7,6 +7,7 @@ import {Router} from "@angular/router";
 import {Observable, Subject} from "rxjs/Rx";
 import {map} from "rxjs-compat/operator/map";
 import { environment } from "src/environments/environment";
+import { Test } from './Model/Test';
 
 const ENV = environment;
 
@@ -17,16 +18,24 @@ export class AuthService {
     private user : User;
     private pathUser: string = `${ENV.host}/user`;
 
-    test : Subject<string> = new Subject<string>();
+    private pathTest: string = `${ENV.host}/test`;
+
+    test : Subject<Test> = new Subject<Test>();
 
 
     constructor(private router: Router, private http: HttpClient, public jwtHelper: JwtHelperService) {
     }
 
     goodBy(){
-        this.test.next('GoodBy My Friend');
+        this.test.next({name:'GoodBy My Friend'});
     }
 
+    public getTest()  : Observable<Test>{
+        return this.http.get<Test>(this.pathTest, {observe: 'body'});
+    }
+    public updateTest(test:Test)  : Observable<Test>{
+        return this.http.post<Test>(this.pathTest,{test}, {observe: 'body'});
+    }
 
     public getUser() {
         this.user = JSON.parse(localStorage.getItem('user'));

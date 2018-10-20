@@ -30,6 +30,8 @@ import {PublicComponent} from './public/public.component';
 import {LogoutComponent} from './logout/logout.component';
 import {PostService} from "./providers/post.service";
 import {PostComponent, DialogContentExampleDialog} from './post/post.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
+
 
 
 export const appRoutes: Routes = [
@@ -77,7 +79,8 @@ export function getAccessToken() {
         PublicComponent,
         LogoutComponent,
         PostComponent,
-        DialogContentExampleDialog
+        DialogContentExampleDialog,
+        PostDetailComponent
     ],
     imports: [
         BrowserModule,

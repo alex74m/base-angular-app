@@ -6,3 +6,8 @@
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
 }
+
+.selected {
+    background-color: rgb(11, 116, 161) !important;
+    color: white;
+  }
