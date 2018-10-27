@@ -34,6 +34,10 @@ import {LogoutComponent} from './logout/logout.component';
 import {PostService} from "./providers/post.service";
 import {PostComponent, DialogContentExampleDialog} from './post/post.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { VoterComponent } from './voter/voter.component';
+import { VoterTakerComponent } from './voter-taker/voter-taker.component';
 
 
 
@@ -41,6 +45,8 @@ export const appRoutes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'public', component: PublicComponent},
     {path: 'logout', component: LogoutComponent},
+    {path: 'parent', component: ParentComponent},
+    {path: 'voter', component: VoterTakerComponent},
     {
         path: 'posts',
         component: PostComponent,
@@ -83,7 +89,11 @@ export function getAccessToken() {
         LogoutComponent,
         PostComponent,
         DialogContentExampleDialog,
-        PostDetailComponent
+        PostDetailComponent,
+        ParentComponent,
+        ChildComponent,
+        VoterComponent,
+        VoterTakerComponent
     ],
     imports: [
         BrowserModule,
