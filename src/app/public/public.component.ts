@@ -9,8 +9,12 @@ import { Test } from '../Model/Test';
 })
 export class PublicComponent implements OnInit {
 
-  test : Test = {name : "Helloooo"};
+  test : Test = {name : "<script>alert('ok')></script>"};
 
+  /**
+   * 
+   * @param authService 
+   */
   constructor(private authService : AuthService) { 
     this.authService.test.subscribe((data)=>{
       this.test = {name: data.name};
@@ -20,7 +24,8 @@ export class PublicComponent implements OnInit {
 
   ngOnInit() {
     this.authService.getTest().subscribe((data)=>{
-      this.test = {name: data.name};
+      console.log('data',data);
+      this.test = {name: data['test'].name};
     })
   }
 

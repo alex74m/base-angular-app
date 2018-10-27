@@ -14,7 +14,10 @@ import {
     MatCheckboxModule, MatDialogModule,
     MatFormFieldModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatToolbarModule,
+    MatNavList,
+    MatListModule
 } from '@angular/material';
 import {MatCardModule} from '@angular/material/card';
 
@@ -87,8 +90,8 @@ export function getAccessToken() {
         HttpClientModule,
         BrowserAnimationsModule, MatButtonModule, MatCheckboxModule,
         MatIconModule, MatFormFieldModule,
-        MatInputModule, MatCardModule,
-        ReactiveFormsModule,
+        MatInputModule, MatCardModule, MatToolbarModule, MatIconModule,
+        ReactiveFormsModule, MatListModule,
         CommonModule, MatDialogModule,
         FormsModule,
         RouterModule.forRoot(

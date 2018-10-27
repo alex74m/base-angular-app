@@ -1,11 +1,10 @@
-<h1>Welcome to app!</h1>
-<nav>
-  <a routerLink="/login" routerLinkActive="active">login</a>
-  <a routerLink="/profil" routerLinkActive="active">profil</a>
-    <a routerLink="/admin" routerLinkActive="active">admin</a>
-    <a routerLink="/public" routerLinkActive="active">public</a>
-    <a routerLink="/logout" routerLinkActive="active">logout</a>
-    <a routerLink="/posts" routerLinkActive="active">blog</a>
-</nav>
-<hr>
+<mat-toolbar>
+  <a [class.nav-bar]="1==1" routerLink="/login" routerLinkActive="active">login</a>
+  <a [class.nav-bar]="1==1" routerLink="/profil" routerLinkActive="active">profil</a>
+  <a [class.nav-bar]="1==1" routerLink="/admin" routerLinkActive="active">admin</a>
+  <a [class.nav-bar]="1==1" routerLink="/public" routerLinkActive="active">public</a>
+  <a [class.nav-bar]="1==1" (click)="logoutUser()" routerLinkActive="active">logout</a>
+  <a [class.nav-bar]="1==1" routerLink="/posts" routerLinkActive="active">blog</a>
+</mat-toolbar>
+
 <router-outlet></router-outlet>

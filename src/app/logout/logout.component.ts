@@ -1,18 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthService} from "../auth.service";
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-logout',
   templateUrl: './logout.component.html',
   styleUrls: ['./logout.component.css']
 })
-export class LogoutComponent implements OnInit {
+export class LogoutComponent {
 
-  constructor(private auth: AuthService) { }
+ //userIsLogout : BehaviorSubject<boolean>;
 
-  ngOnInit() {
-      this.auth.logoutUser();
-  }
+ //constructor(private auth: AuthService) { }
+
+ //ngOnInit() {
+ //    this.auth.logoutUser().subscribe(res=>{
+ //        if(res == 1 ){
+
+ //        }
+ //    });
+ //}
 
 
 
