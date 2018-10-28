@@ -38,6 +38,9 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { VoterComponent } from './voter/voter.component';
 import { VoterTakerComponent } from './voter-taker/voter-taker.component';
+import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
+import { CountdownViewChildParentComponent } from './countdown-view-child-parent/countdown-view-child-parent.component';
+import { CardHoverDirective } from './card-hover.directive';
 
 
 
@@ -46,6 +49,7 @@ export const appRoutes: Routes = [
     {path: 'public', component: PublicComponent},
     {path: 'logout', component: LogoutComponent},
     {path: 'parent', component: ParentComponent},
+    {path: 'countTimer', component: CountdownViewChildParentComponent},
     {path: 'voter', component: VoterTakerComponent},
     {
         path: 'posts',
@@ -93,7 +97,10 @@ export function getAccessToken() {
         ParentComponent,
         ChildComponent,
         VoterComponent,
-        VoterTakerComponent
+        VoterTakerComponent,
+        CountdownTimerComponent,
+        CountdownViewChildParentComponent,
+        CardHoverDirective
     ],
     imports: [
         BrowserModule,

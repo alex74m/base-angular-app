@@ -4,9 +4,18 @@
   <a [class.nav-bar]="1==1" routerLink="/admin" routerLinkActive="active">admin</a>
   <a [class.nav-bar]="1==1" routerLink="/parent" routerLinkActive="active">parent</a>
   <a [class.nav-bar]="1==1" routerLink="/voter" routerLinkActive="active">voter</a>
+  <a [class.nav-bar]="1==1" routerLink="/countTimer" routerLinkActive="active">countTimer</a>
   <a [class.nav-bar]="1==1" routerLink="/public" routerLinkActive="active">public</a>
   <a [class.nav-bar]="1==1" (click)="logoutUser()" routerLinkActive="active">logout</a>
   <a [class.nav-bar]="1==1" routerLink="/posts" routerLinkActive="active">blog</a>
 </mat-toolbar>
+
+<hr>
+<h1>Test directive</h1>
+<div appCardHover style="width: 30px;height:50px;">
+  
+  hey
+</div>
+<hr>
 
 <router-outlet></router-outlet>

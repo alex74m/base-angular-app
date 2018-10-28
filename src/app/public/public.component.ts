@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { Test } from '../Model/Test';
+import { TestEnum} from '../test.enum';
 
 @Component({
   selector: 'app-public',
@@ -10,6 +11,8 @@ import { Test } from '../Model/Test';
 export class PublicComponent implements OnInit {
 
   test : Test = {name : "<script>alert('ok')></script>"};
+
+  monenum : string = TestEnum.Proof;
 
   /**
    * 
