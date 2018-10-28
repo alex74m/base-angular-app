@@ -8,11 +8,18 @@
   
 </p>
 <p>
-  Mon enum = {{ monenum }}
+  Mon enum =                             {{ monenum }}
 </p>
 <div>
   <label>name:
     <input  [(ngModel)]="test.name" placeholder="test"/>
   </label>
   <button (click)="updateTest(test)">Modifier good by</button>
+</div>
+
+<div class="card card-block"
+*ngFor="let joke of jokes">
+<h4 class="card-title">{{joke.setup}}</h4>
+<p class="card-text" [hidden]="joke.hide">{{joke.punchline}}</p>
+<button class="btn btn-warning" (click)="toggle(joke)">Tell Me</button>
 </div>

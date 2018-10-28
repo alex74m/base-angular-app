@@ -4,6 +4,7 @@ import {FormService} from "../form.service";
 import {AuthService} from "../auth.service";
 import {Router} from "@angular/router";
 import {User} from "../Model/User";
+import { PublicComponent } from '../public/public.component';
 
 @Component({
     selector: 'app-login',
@@ -16,7 +17,6 @@ export class LoginComponent implements OnInit {
     user : User;
 
     public loginForm: FormGroup;
-
     
     constructor(private router:Router, public formBuilderProvider: FormService, private authService : AuthService) {
         this.loginForm = this.formBuilderProvider.createLoginUserFormBuilderValidator();

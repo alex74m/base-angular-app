@@ -41,6 +41,9 @@ import { VoterTakerComponent } from './voter-taker/voter-taker.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { CountdownViewChildParentComponent } from './countdown-view-child-parent/countdown-view-child-parent.component';
 import { CardHoverDirective } from './card-hover.directive';
+import { JokeComponent } from './joke/joke.component';
+import { JokeListComponent } from './joke-list/joke-list.component';
+import { JokeFormComponent } from './joke-form/joke-form.component';
 
 
 
@@ -49,6 +52,7 @@ export const appRoutes: Routes = [
     {path: 'public', component: PublicComponent},
     {path: 'logout', component: LogoutComponent},
     {path: 'parent', component: ParentComponent},
+    {path: 'joke', component: JokeListComponent},
     {path: 'countTimer', component: CountdownViewChildParentComponent},
     {path: 'voter', component: VoterTakerComponent},
     {
@@ -100,7 +104,10 @@ export function getAccessToken() {
         VoterTakerComponent,
         CountdownTimerComponent,
         CountdownViewChildParentComponent,
-        CardHoverDirective
+        CardHoverDirective,
+        JokeComponent,
+        JokeListComponent,
+        JokeFormComponent
     ],
     imports: [
         BrowserModule,
