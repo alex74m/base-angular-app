@@ -2,13 +2,35 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body{
-    background: #bdb6b6;
+    background: #f1f0f0;
 }
 
-a{
-    margin: 0 10px 0 10px;
-    padding: 5px 10px;
-    background-color: #2639e6;
-    color: white;
+.nav-bar{
+    flex: 1 1 auto;
+    text-align: center;
+    background: #3D94F6;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #FFFFFF;
+    font-family: Open Sans;
+    font-size: 21px;
+    font-weight: 100;
+    padding: 16px;
+    box-shadow: 1px 1px 20px 0px #000000;
+    -webkit-box-shadow: 1px 1px 20px 0px #000000;
+    -moz-box-shadow: 1px 1px 20px 0px #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
     text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.nav-bar:hover {
+    background: #1E62D0;
+    text-decoration: none;
+}
+.nav-bar:active {
+	position:relative;
+	top:1px;
 }

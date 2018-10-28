@@ -8,6 +8,8 @@ import {Observable, Subject} from "rxjs/Rx";
 import {map} from "rxjs-compat/operator/map";
 import { environment } from "src/environments/environment";
 import { Test } from './Model/Test';
+import { retry } from 'rxjs-compat/operator/retry';
+import { of } from 'rxjs';
 
 const ENV = environment;
 
@@ -27,7 +29,7 @@ export class AuthService {
     }
 
     goodBy(){
-        this.test.next({name:'GoodBy My Friend'});
+        this.test.next({name : 'ok'});
     }
 
     public getTest()  : Observable<Test>{
@@ -60,9 +62,11 @@ export class AuthService {
     }
 
 
-    public logoutUser() {
+    public logoutUser() : Observable<number>{
         this.removeUserInLocalStorage();
-        this.router.navigate(['login']);
+        return of(1);
+        //window.location.href = "http://google.fr";
+        //this.router.navigate(['login']);
     }
 
     private removeUserInLocalStorage(){

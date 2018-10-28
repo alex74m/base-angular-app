@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { Test } from '../Model/Test';
+import { TestEnum} from '../test.enum';
 
 @Component({
   selector: 'app-public',
@@ -9,8 +10,14 @@ import { Test } from '../Model/Test';
 })
 export class PublicComponent implements OnInit {
 
-  test : Test = {name : "Helloooo"};
+  test : Test = {name : "<script>alert('ok')></script>"};
 
+  monenum : string = TestEnum.Proof;
+
+  /**
+   * 
+   * @param authService 
+   */
   constructor(private authService : AuthService) { 
     this.authService.test.subscribe((data)=>{
       this.test = {name: data.name};
@@ -20,7 +27,8 @@ export class PublicComponent implements OnInit {
 
   ngOnInit() {
     this.authService.getTest().subscribe((data)=>{
-      this.test = {name: data.name};
+      console.log('data',data);
+      this.test = {name: data['test'].name};
     })
   }
 
